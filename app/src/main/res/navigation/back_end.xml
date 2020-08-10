@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/back_end"
+    app:startDestination="@id/backendFragment">
+
+    <fragment
+        android:id="@+id/backendFragment"
+        android:name="com.srgpanov.funboxtt.ui.screens.back_end.BackendFragment"
+        android:label="BackendFragment" >
+        <action
+            android:id="@+id/action_backendFragment_to_goodsRedactorFragment"
+            app:destination="@id/goodsRedactorFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/goodsRedactorFragment"
+        android:name="com.srgpanov.funboxtt.ui.screens.goods_redactor.GoodsRedactorFragment"
+        android:label="fragment_goods_redactor"
+        tools:layout="@layout/fragment_goods_redactor" >
+
+    </fragment>
+</navigation>

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">FunBoxTT</string>
+    <string name="store_front">Store-Front</string>
+    <string name="back_end">Back-End</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="buy_button_text">Buy</string>
+    <string name="backend_redactor_hint_name">Name</string>
+    <string name="backend_redactor_hint_price">Price</string>
+    <string name="backend_redactor_hint_quantity">Quantity</string>
+    <string name="message_purchased_success"> was purchased</string>
+    <string name="message_purchased_failure">An error occurred when purchasing the goods</string>
+    <string name="btn_redactor_save">Save goods</string>
+
+    <string name="sets_available">%d Sets available</string>
+    <string name="rub">₽</string>
+    <string name="goods_image_transition_name">goods_image</string>
+    <string name="no_args_transition">no_args_transition</string>
+    <string name="purchase_cancel">Purchasing in progress - press to cancel</string>
+    <string name="saving_in_progress_press_to_cancel">Saving in progress - press to cancel</string>
+    <string name="error_field_message">Field must be not empty</string>
+    <string name="error_name_message">Name must contains 3 and more characters</string>
+    <string name="redactor_parse_fields_error">Not all fields are filled in correctly</string>
+    <string name="purchasing_loading">Purchasing in progress</string>
+    <string name="saving_in_progress">Saving in progress</string>
+    <string name="goods_saved">Goods saved</string>
+    <string name="goods_not_saved">Goods was changed. Saving canceled</string>
+    <string name="purchase_error">Goods was changed. Purchased canceled</string>
+
+
+</resources>

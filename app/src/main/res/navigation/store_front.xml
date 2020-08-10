@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/store_front"
+    app:startDestination="@id/storefrontFragment"
+    >
+
+    <fragment
+        android:id="@+id/storefrontFragment"
+        android:name="com.srgpanov.funboxtt.ui.screens.store_front.StorefrontFragment"
+        android:label="StorefrontFragment" />
+</navigation>
