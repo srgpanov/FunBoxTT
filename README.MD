@@ -14,16 +14,12 @@
 
 **ui** — классы пользовательского интерфейса
 
-На слое presentation я реализовал упрощенную архитектуру Flux. Состояние экранов хранится в LiveData и изменяется только через функцию-редьюсер (invoke во ViewModel). Потомки класса [State](https://github.com/Kondenko/FunBoxTestTask/blob/master/app/src/main/java/com/kondenko/funshop/presentation/flux/State.kt) — это все возможные состояния приложения. Потомки [классов](https://github.com/Kondenko/FunBoxTestTask/blob/master/app/src/main/java/com/kondenko/funshop/presentation/flux/Action.kt) Action.Buyer и Action.Admin позволяют перейти от одного состояния к другому.
-
-Благодаря ViewModel можно не переживать о сохранении состояния любой сложности при перевороте экрана.
 
 ## Описание экранов
 В приложении три экрана:
--детальный просмотр товара
--просмотр списка товаров
--редактирование товара
-
+- *store_front* детальный просмотр товара
+- *back_end* просмотр списка товаров
+- *goods_redactor* редактирование товара
 
 ## Сохранение и загрузка данных
 
