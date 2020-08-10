@@ -5,7 +5,6 @@ import android.graphics.Color
 import android.os.Bundle
 import android.text.TextWatcher
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -14,6 +13,7 @@ import android.widget.Toast
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.widget.doOnTextChanged
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
@@ -26,7 +26,6 @@ import com.google.android.material.textfield.TextInputLayout
 import com.google.android.material.transition.MaterialContainerTransform
 import com.srgpanov.funboxtt.R
 import com.srgpanov.funboxtt.data.entity.Goods
-
 import com.srgpanov.funboxtt.databinding.FragmentGoodsRedactorBinding
 import com.srgpanov.funboxtt.other.showLoading
 import com.srgpanov.funboxtt.ui.shared_components.goods_components.GoodsSharedViewModel
@@ -204,6 +203,7 @@ class GoodsRedactorFragment : Fragment() {
                 findNavController().popBackStack()
             }else{
                 showError(getString(R.string.goods_not_saved))
+                findNavController().popBackStack()
             }
         }
     }
@@ -247,6 +247,7 @@ class GoodsRedactorFragment : Fragment() {
         awaitClose { this@textInputAsFlow.removeTextChangedListener(watcher) }
     }
 
+    @Suppress("RedundantSuspendModifier")
     private suspend fun checkName(text: CharSequence): Boolean {
         return text.length >= 3
     }
