@@ -29,7 +29,7 @@
 
 На эранах [store_front](https://github.com/srgpanov/FunBoxTT/blob/master/app/src/main/java/com/srgpanov/funboxtt/ui/screens/store_front/StorefrontFragment.kt) и [back_end](https://github.com/srgpanov/FunBoxTT/blob/master/app/src/main/java/com/srgpanov/funboxtt/ui/screens/back_end/BackendFragment.kt) данные всегда достаются из хранилища через Repository
 
-На эране редактирования товара для сохранения ввёдёных ползователем данных используется  [viewModel](https://github.com/srgpanov/FunBoxTT/blob/master/app/src/main/java/com/srgpanov/funboxtt/ui/screens/goods_redactor/GoodsRedactorViewModel.kt) вместе с SavedStateHandle, чтобы в случае когда приложение будет "убито" системой введённые данные сохранились
+На эране редактирования товара для сохранения ввёдёных пользавателем данных используется  [viewModel](https://github.com/srgpanov/FunBoxTT/blob/master/app/src/main/java/com/srgpanov/funboxtt/ui/screens/goods_redactor/GoodsRedactorViewModel.kt) вместе с SavedStateHandle, чтобы в случае когда приложение будет "убито" системой введённые данные сохранились
 
 ## Покупка и сохранение товаров
 
