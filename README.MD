@@ -27,7 +27,7 @@
 
 Класс [Repository](https://github.com/srgpanov/FunBoxTT/blob/aef6ded3e8c59cabe5523d4721b29d56933bc880/app/src/main/java/com/srgpanov/funboxtt/data/Repository.kt#L11) служит адаптером для источника данных. Дынные поставляются через интерфейс [GoodsStorage](https://github.com/srgpanov/FunBoxTT/blob/master/app/src/main/java/com/srgpanov/funboxtt/data/storage/GoodsStorage.kt). В приложении два источника дынных БД и CSV файл, для каждого написан своя реализация GoodsStorage (для источника данных из CSV файла не имплементирована запись данных).
 
-На эранах [store_front](https://github.com/srgpanov/FunBoxTT/blob/master/app/src/main/java/com/srgpanov/funboxtt/ui/screens/store_front/StoreAdapter.kt) и [back_end](https://github.com/srgpanov/FunBoxTT/blob/master/app/src/main/java/com/srgpanov/funboxtt/ui/screens/back_end/BackendFragment.kt) данные всегда достаются из хранилища через Repository
+На эранах [store_front](https://github.com/srgpanov/FunBoxTT/blob/master/app/src/main/java/com/srgpanov/funboxtt/ui/screens/store_front/StorefrontFragment.kt) и [back_end](https://github.com/srgpanov/FunBoxTT/blob/master/app/src/main/java/com/srgpanov/funboxtt/ui/screens/back_end/BackendFragment.kt) данные всегда достаются из хранилища через Repository
 
 На эране редактирования товара для сохранения ввёдёных ползователем данных используется  [viewModel](https://github.com/srgpanov/FunBoxTT/blob/master/app/src/main/java/com/srgpanov/funboxtt/ui/screens/goods_redactor/GoodsRedactorViewModel.kt) вместе с SavedStateHandle, чтобы в случае когда приложение будет "убито" системой введённые данные сохранились
 
