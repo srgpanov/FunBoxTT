@@ -36,3 +36,5 @@
 Если товар был куплен, пока его [редактировали](https://github.com/srgpanov/FunBoxTT/blob/aef6ded3e8c59cabe5523d4721b29d56933bc880/app/src/main/java/com/srgpanov/funboxtt/ui/shared_components/goods_components/GoodsSharedViewModel.kt#L84) появится сообщение, что сохранение не удалось и произошла ошибка.
 
 Если товар был [отредактирован](https://github.com/srgpanov/FunBoxTT/blob/aef6ded3e8c59cabe5523d4721b29d56933bc880/app/src/main/java/com/srgpanov/funboxtt/ui/shared_components/goods_components/GoodsSharedViewModel.kt#L68) и его количество стало <1, в процессе его покупки появится сообщение, что покупка не удалась и произошла ошибка.
+
+[APK файл](https://github.com/srgpanov/FunBoxTT/blob/aef6ded3e8c59cabe5523d4721b29d56933bc880/app/src/main/java/com/srgpanov/funboxtt/ui/shared_components/goods_components/GoodsSharedViewModel.kt#L68)
